@@ -1,0 +1,46 @@
+# Pliki i katalogi generowane przez system operacyjny
+.DS_Store
+Thumbs.db
+
+# Katalogi środowiska wirtualnego
+venv/
+env/
+
+# Pliki środowiska wirtualnego
+*.pyc
+*.pyo
+*.pyd
+
+# Pliki IDE
+.vscode/
+.idea/
+
+# Katalogi generowane przez Django
+__pycache__/
+migrations/
+.idea/
+
+
+# Plik konfiguracyjny Django
+*.env
+
+# Pliki do debugowania
+*.log
+*.pot
+*.pyc
+*.pyo
+
+# Pliki tymczasowe
+*.swp
+
+# Pliki pycache utworzone przez Python 3.7 i nowsze
+__pycache__/
+
+# Pliki konfiguracyjne dla środowisk deweloperskich
+.env
+
+# Pliki bazy danych SQLite
+db.sqlite3
+
+# Plik z logami Django
+logs/
