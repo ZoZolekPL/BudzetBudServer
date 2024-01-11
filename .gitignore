@@ -18,8 +18,6 @@ env/
 # Katalogi generowane przez Django
 __pycache__/
 migrations/
-.idea/
-
 
 # Plik konfiguracyjny Django
 *.env
