@@ -1,0 +1,29 @@
+{% load static %}
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>BudzetBud {% block title %} {% endblock %}</title>
+    <link href="{% static 'css/style.css'" %} rel = "stylesheet"/>
+
+</head>
+<body>
+<nav>
+    <span class = "logo">BudzetBud</span>
+    <span class = "user">
+        {% if request.user.is_authenticated %}
+        <p>Zalogowany</p>
+        <a href="{% url 'logout' %}">Wyloguj</a>
+        {% else %}
+        <a href="{% url 'login' %}">Zaloguj</a>
+        <a href="{% url  'register' %}">Zarejestruj się</a>
+
+    </span>
+        {% endif %}
+
+</nav>
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>
